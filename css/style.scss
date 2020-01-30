@@ -1,0 +1,11 @@
+@import "reset_plus.scss";
+
+/* Why not try a few variables :-) */
+
+$color-main: #333; // black
+$color-light: #999; // grey
+$color-accent: #ea4c89; // pink
+
+body {
+	color: $color-main;
+}
