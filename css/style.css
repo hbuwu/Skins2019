@@ -1,1 +1,118 @@
-/*Placeholder*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ONDERSTAANDE UITGANGSPUNTEN ZAGEN WE IN DE LES */
+:root {
+  font-size: 62.5%; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  color: #f0f0f0;
+  text-align: center;
+  background-color: #181818;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  margin-top: 5rem;
+  margin-bottom: 10rem; }
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem; }
+  header h2 {
+    font-size: 2rem;
+    font-weight: bold; }
+
+main {
+  max-width: 80vw;
+  margin: 0 auto; }
+  main .gridcontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem; }
+    main .gridcontainer img {
+      width: 50%;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    main .gridcontainer img:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    main .gridcontainer h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    main .gridcontainer h3:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+
+@media (max-width: 1025px) {
+  main .gridcontainer {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr); } }
